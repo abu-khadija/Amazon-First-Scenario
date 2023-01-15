@@ -4,7 +4,7 @@ import Pages.CartClass;
 import org.openqa.selenium.By;
 import org.testng.annotations.Test;
 
-public class CartTest extends TestPages.TestBase {
+public class CartTest extends TestBase {
     @Test
     public void CART() throws InterruptedException {
         CartClass C;

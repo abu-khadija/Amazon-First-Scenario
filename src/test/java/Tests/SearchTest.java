@@ -5,7 +5,7 @@ import org.openqa.selenium.By;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
-public class SearchTest extends TestPages.TestBase {
+public class SearchTest extends TestBase {
     @Test
     public void Search() throws InterruptedException {
         SearchClass search;
@@ -13,6 +13,8 @@ public class SearchTest extends TestPages.TestBase {
 
         search.Search();
 
+
+        //assertion
         String expectedResult = "Automotive";
         String actualResult = driver.findElement(By.linkText("Automotive")).getText();
         Assert.assertEquals(actualResult, expectedResult);
